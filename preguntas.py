@@ -9,6 +9,7 @@ https://jdvelasq.github.io/courses/notebooks/sklearn_supervised_10_neural_networ
 """
 
 import pandas as pd
+import numpy as np
 
 
 def pregunta_01():
@@ -16,16 +17,16 @@ def pregunta_01():
     Carga y separación de los datos en `X` `y`
     """
     # Lea el archivo `concrete.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv("concrete.csv")
+    df = pd.read_csv('concrete.csv')
 
     # Asigne la columna `strength` a la variable `y`.
-    y = df["strength"] 
+    y = df['strength'] 
 
     # Asigne una copia del dataframe `df` a la variable `X`.
     x = df.copy() 
 
     # Remueva la columna `strength` del DataFrame `X`.
-    x.drop("strength", axis=1, inplace=True) 
+    x.drop('strength', axis=1, inplace=True) 
 
     # Retorne `X` y `y`
     return x, y
