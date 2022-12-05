@@ -9,7 +9,7 @@ https://jdvelasq.github.io/courses/notebooks/sklearn_supervised_10_neural_networ
 """
 
 import pandas as pd
-
+import numpy as np
 
 def pregunta_01():
     """
@@ -78,13 +78,13 @@ def pregunta_03():
         steps=[
             (
                 "minmaxscaler",
-                MinMaxScaler(),  
+                MinMaxScaler()  
             ),
             (
                 "mlpregressor",
-                MLPRegressor(),  
-            ),
-        ],
+                MLPRegressor()  
+            )
+        ]
     )
 
     # Retorne el pipeline
