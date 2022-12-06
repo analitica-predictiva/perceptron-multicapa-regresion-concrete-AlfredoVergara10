@@ -9,7 +9,6 @@ https://jdvelasq.github.io/courses/notebooks/sklearn_supervised_10_neural_networ
 """
 
 import pandas as pd
-import numpy as np
 
 
 def pregunta_01():
